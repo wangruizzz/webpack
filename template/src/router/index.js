@@ -13,9 +13,12 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
-      // component: r => require.ensure([], () => r(require('../components/Home')), 'demo')
     },
-   
+	{
+	  path: "/casher",
+      name: "casher",
+      component: () => import("@/views/casher.vue")
+	}，
     {
       path: "/fundList",
       name: "fundList",
