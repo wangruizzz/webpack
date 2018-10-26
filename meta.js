@@ -128,12 +128,12 @@ module.exports = {
         },
       ],
     },
-    autoInstall: {
+	e2e: {
       when: 'isNotTest',
-      type: 'list',
-      message:
-        'Welcome to use vx cli'
-    },
+      type: 'confirm',
+      message: 'Setup e2e tests with Nightwatch?',
+    }
+   
   },
   filters: {
     '.eslintrc.js': 'lint',
