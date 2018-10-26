@@ -14,11 +14,6 @@ export default new Router({
       name: 'Home',
       component: Home
     },
-	{
-	  path: "/casher",
-      name: "casher",
-      component: () => import("@/views/casher.vue")
-	}，
     {
       path: "/fundList",
       name: "fundList",
